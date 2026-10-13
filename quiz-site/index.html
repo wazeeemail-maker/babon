@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz vidéo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Étape 1 : la vidéo -->
+  <div class="quiz" id="video-screen">
+    <h1>Regarde bien la vidéo 👀</h1>
+    <div class="video-wrapper">
+      <iframe
+        id="player"
+        title="Vidéo YouTube Short"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <button id="start">J'ai fini, lancer le quiz</button>
+  </div>
+
+  <!-- Étape 2 : le quiz -->
+  <div class="quiz hidden" id="quiz-screen">
+    <h1>Qu'as-tu vu dans la vidéo ?</h1>
+    <p id="progress"></p>
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+    <button id="next" disabled>Suivant</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
